@@ -5,7 +5,7 @@ class TaskItem extends Component {
     showStatusElement(){
         return (
             <span
-                className={ this.props.task.status ? 'label label-danger' : 'label label-info' }
+                className={ this.props.task.status ? 'label label-success' : 'label label-danger' }
                 onClick={ this.onUpdateStatus }
             >{ this.props.task.status === true ? 'Kích Hoạt' : 'Ẩn' }</span>
         );
